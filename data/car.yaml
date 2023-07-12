@@ -1,0 +1,11 @@
+
+train: ./datasets/fish/images/train.txt  # 训练集的标签文件.txt的位置
+val: ./datasets/fish/images/val.txt  # 验证集位置的标签文件.txt的位置
+test: ./datasets/   # 测试集的标签文件.txt的位置
+
+
+# 标签的个数   如果有需要又加在这里
+nc: 2
+
+# 标签名称  如果有需要又加在这里
+names: [ 'people','car' ]

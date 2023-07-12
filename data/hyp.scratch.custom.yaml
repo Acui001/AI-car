@@ -1,0 +1,32 @@
+# 训练过程的超参数
+lr0: 0.01  # 初始学习率（SGD=1E-2，Adam=1E-3）
+lrf: 0.1  # 最终的 OneCycleLR 学习率（lr0 * lrf）
+momentum: 0.937  # SGD 动量/Adam beta1
+weight_decay: 0.0005  # 优化器权重衰减 5e-4
+warmup_epochs: 3.0  # 预热阶段的轮数（可以使用小数）
+warmup_momentum: 0.8  # 预热阶段的初始动量
+warmup_bias_lr: 0.1  # 预热阶段的初始偏置学习率
+box: 0.05  # box 损失权重
+cls: 0.3  # cls 损失权重
+cls_pw: 1.0  # cls BCELoss 正样本权重
+obj: 0.7  # obj 损失权重（与像素相关的缩放）
+obj_pw: 1.0  # obj BCELoss 正样本权重
+iou_t: 0.20  # 训练时的 IoU 阈值
+anchor_t: 4.0  # anchor-multiple 阈值
+# anchors: 3  # 每个输出层的 anchors 数量（设置为0忽略）
+fl_gamma: 0.0  # focal loss 的 gamma（efficientDet 默认 gamma=1.5）
+hsv_h: 0.015  # 图像 HSV-Hue 增强（比例）
+hsv_s: 0.7  # 图像 HSV-Saturation 增强（比例）
+hsv_v: 0.4  # 图像 HSV-Value 增强（比例）
+degrees: 0.0  # 图像旋转（+/- 度数）
+translate: 0.2  # 图像平移（+/- 比例）
+scale: 0.5  # 图像缩放（+/- 增益）
+shear: 0.0  # 图像错切变换（+/- 度数）
+perspective: 0.0  # 图像透视变换（+/- 比例），范围为 0-0.001
+flipud: 0.0  # 图像上下翻转的概率
+fliplr: 0.5  # 图像左右翻转的概率
+mosaic: 1.0  # 图像马赛克的概率
+mixup: 0.0  # 图像混合的概率
+copy_paste: 0.0  # 图像复制粘贴的概率
+paste_in: 0.0  # 图像复制粘贴的概率，设置为 0 以加快训练速度
+loss_ota: 1  # 使用 ComputeLossOTA，设置为 0 以加快训练速度
