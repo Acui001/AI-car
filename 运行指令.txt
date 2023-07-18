@@ -1,0 +1,7 @@
+# 提示只要是"#"开头的都是给你看的部分，不是输入到命令框的部分
+# 想要运行下面的
+#  先在detect.py下打开cmd
+# 激活环境，复制下面的代码
+activate yolo
+# 然后运行下面代码
+python detect.py --weights weights/yolov7.pt --conf 0.25 --img-size 640 --source inference/images

@@ -1,0 +1,16 @@
+
+train: ./datasets/fish/images/train.txt  # 训练集的标签文件.txt的位置
+val: ./datasets/fish/images/val.txt  # 验证集位置的标签文件.txt的位置
+test: ./datasets/   # 测试集的标签文件.txt的位置
+
+
+# 标签的个数   如果有需要又加在这里
+nc: 27
+
+# 标签名称  如果有需要又加在这里
+names: ['car', 'watcher', 'base', 'armor_1_blue', 'armor_2_blue', 'armor_3_blue',
+              'armor_4_blue', 'armor_5_blue', 'armor_6_blue', 'armor_7_blue', 'armor_8_blue',
+              'armor_1_red', 'armor_2_red', 'armor_3_red', 'armor_4_red', 'armor_5_red',
+              'armor_6_red', 'armor_7_red', 'armor_8_red',
+              'armor_1_grey', 'armor_2_grey', 'armor_3_grey', 'armor_4_grey', 'armor_5_grey',
+              'armor_6_grey', 'armor_7_grey', 'armor_8_grey']

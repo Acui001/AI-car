@@ -1,0 +1,9 @@
+特征（Characteristic）UUID可以在设备的文档、规格说明或厂商提供的开发文档中找到。通常，BLE设备制造商会提供一份文档，其中包含设备的服务（Service）和特征的UUID以及其他相关信息。
+
+如果你无法获取设备的文档或开发文档，你可以尝试使用BLE调试工具来扫描设备并查看其服务和特征的UUID。一些常用的BLE调试工具包括BlueZ（Linux平台）、LightBlue（Mac平台）和nRF Connect（Windows和Android平台）。这些工具可以帮助你扫描设备、查找其服务和特征，并显示其UUID。
+
+一般情况下，设备的服务和特征UUID遵循Bluetooth SIG（蓝牙特别兴趣组）定义的标准UUID格式。标准的通用特征UUID格式为：0000XXXX-0000-1000-8000-00805f9b34fb，其中XXXX部分是由设备制造商定义的特征UUID的唯一标识符。
+
+请确保根据实际设备的文档或使用BLE调试工具来获取正确的特征UUID。
+
+nRF Connect的下载网址：https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-desktop
